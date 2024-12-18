@@ -35,7 +35,7 @@ public class Program
 
         else if (n == 3)
         {
-            //Write program to prompt a user to input his/her name and country name and then
+            //3.Write program to prompt a user to input his/her name and country name and then
             //output will be shown as given: Hello<yourname> from country <countryname>
 
             Console.WriteLine("Enter Your Name :");
@@ -121,10 +121,89 @@ public class Program
             intrest.SimpleInterest();
         }
 
+        else if (n == 8)
+{
+    //8. Write a program to create a Simple Calculator for two numbers (Addition, 
+    //   Multiplication, Subtraction, Division) [Also using if…else &Switch Case] 
+    Console.ForegroundColor = ConsoleColor.Cyan;
+    Console.Write("Enter First Number : ");
+    float a = float.Parse(Console.ReadLine());
 
+    Console.Write("Enter Opreator (+, -, *, /): ");
+    char op = char.Parse(Console.ReadLine());
 
+    Console.Write("Enter Second Number : ");
+    float b = float.Parse(Console.ReadLine());
+    if (op == '+')
+    {
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine($"Ans is {a + b}");
+        Console.ForegroundColor = ConsoleColor.White;
+    }
+    else if (op == '-')
+    {
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine($"Ans is {a - b}");
+        Console.ForegroundColor = ConsoleColor.White;
+    }
+    else if (op == '*')
+    {
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine($"Ans is {a * b}");
+        Console.ForegroundColor = ConsoleColor.White;
+    }
+    else if (op == '/')
+    {
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine($"Ans is {a / b}");
+        Console.ForegroundColor = ConsoleColor.White;
+    }
+    else
+    {
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine("Invalid Inout Pls Try Again ");
+        Console.ForegroundColor = ConsoleColor.White;
+    }
 
-        else
+}
+else if (n == 9)
+{
+    //9. Write a program to Swapping without using third variable. 
+    Console.ForegroundColor= ConsoleColor.Cyan;
+    Console.Write("Enter First Number : ");
+    int a = int.Parse(Console.ReadLine());
+
+    Console.Write("Enter Second Number : ");
+    int b = int.Parse(Console.ReadLine());
+
+    a = a + b;
+    b = a - b;
+    a = a - b;
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.WriteLine("First Number = {0} \nSecond Number = {1}", a, b);
+    Console.ForegroundColor = ConsoleColor.White;
+}
+else if (n == 10)
+{
+    //10. Write a program to find maximum numbers from given 3 numbers using 
+    //    ternary operator.
+
+    Console.ForegroundColor = ConsoleColor.Cyan;
+    Console.Write("Enter First Number : ");
+    int a = int.Parse(Console.ReadLine());
+
+    Console.Write("Enter Second Number : ");
+    int b = int.Parse(Console.ReadLine());
+
+    Console.Write("Enter Third Number : ");
+    int c = int.Parse(Console.ReadLine());
+
+    Console.ForegroundColor = ConsoleColor.Green;
+    int ans = (a > b) ? (a > c) ? a : c : (b > c)? b : c;
+    Console.WriteLine($"{ans} Is Max");
+    Console.ForegroundColor = ConsoleColor.White;
+}
+else
         {
             Console.WriteLine("Invalid Input");
         }
