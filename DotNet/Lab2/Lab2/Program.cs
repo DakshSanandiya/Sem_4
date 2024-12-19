@@ -52,9 +52,29 @@ class Program
             bank_Account.GetAccountDetails();
             bank_Account.DisplayAccountDetails();
         }
-        else
-        {
-            Console.WriteLine("Invalid Input Pls Try Again...");
-        }
+        //4
+else if (programNO == 4)
+{
+    Student student = new Student();
+    Console.ForegroundColor = ConsoleColor.DarkGreen;
+    student.DisplayStudentDetails();
+    Console.ForegroundColor = ConsoleColor.White;
+}
+//5
+else if (programNO == 5)
+{
+    AreaofRectangle obj = new AreaofRectangle();
+}
+//6
+else if (programNO == 6)
+{
+    Interest interest = new Interest();
+    interest.Account_Details1();
+    interest.Interest1();
+}
+else
+{
+    Console.WriteLine("Invalid Input Pls Try Again...");
+}
     }
 }
