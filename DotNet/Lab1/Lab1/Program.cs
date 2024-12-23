@@ -87,7 +87,7 @@ public class Program
                 Console.WriteLine("Enter redius :");
                 int redius = int.Parse(Console.ReadLine());
 
-                Console.WriteLine($"area of Circle : {2 * 3.14 * redius * redius}");
+                Console.WriteLine($"area of Circle : {3.14 * redius * redius}");
             }
             else
             {
